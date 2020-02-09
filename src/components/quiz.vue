@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column">
-        <v-btn @click="getData" class="align-self-center my-5" large v-bind:class="{ pulseBtn: isActive}">Next Word</v-btn>
+        <v-btn @click="getData" class="align-self-center my-5" large v-bind:class="{ pulseBtn: isActive}" color="amber">Next Word</v-btn>
         <Word :word="word" class="align-self-center"/>
         <div class="px-10">
             <p>Pick the correct definition</p>
@@ -97,20 +97,20 @@ export default {
 @keyframes shadow-pulse
 {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
   }
 }
 
 @keyframes shadow-pulse-big
 {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1);
   }
   100% {
-    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
   }
 }
 
